@@ -10,7 +10,7 @@
       "package": "user_request",
       "type": "rust"
     },
-    "hustler_front_frontend": {
+    "flutter_web_build_frontend": {
       "dependencies": [
         "user_auth",
         "user_request"
