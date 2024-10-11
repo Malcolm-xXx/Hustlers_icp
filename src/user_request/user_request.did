@@ -1,0 +1,22 @@
+type AcceptOrderResponse = variant {
+    error : text;
+    success : text;
+};
+
+type Item = record {
+    name : text;
+    price : nat;
+};
+
+type Order = record {
+    user : principal;
+    accepted_by : opt principal;
+    items : vec Item;
+};
+
+// Main service definition
+service : {
+    accept_order : (nat) -> (AcceptOrderResponse);
+    create_order : (vec Item) -> (text);
+    get_orders : () -> (vec Order) query;
+};

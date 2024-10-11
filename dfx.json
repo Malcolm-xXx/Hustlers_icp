@@ -1,0 +1,22 @@
+{
+  "canisters": {
+    "user_auth": {
+      "candid": "src/user_auth/user_auth.did",
+      "package": "user_auth",
+      "type": "rust"
+    },
+    "user_request": {
+      "candid": "src/user_request/user_request.did",
+      "package": "user_request",
+      "type": "rust"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

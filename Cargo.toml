@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "src/user_auth",
+    "src/user_request"
+]
+resolver = "2"

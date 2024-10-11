@@ -1,0 +1,23 @@
+type User = record {
+    id: text;            // Unique user ID
+    username: text;     // User's chosen username
+    email: text;        // User's email address
+    password_hash: text; // Hashed password for the user
+};
+
+service : {
+    // Registers a new user and returns a boolean indicating success
+    create_user: (text, text, text) -> (opt text); // Returns user ID or error message
+
+    // Deletes a user by ID and returns a boolean indicating success
+    delete_user: (text) -> (bool); // Returns success status
+
+    // Authenticates a user by username and password, returns user ID if successful
+    authenticate_user: (text, text) -> (opt text); // Returns user ID or error message
+
+    // Resets the password for a user by ID
+    reset_password: (text, text) -> (bool); // Returns success status
+
+    // Gets user information by ID
+    get_user_info: (text) -> (opt record { text; text; text }) query; // Returns username, email, or error message
+};

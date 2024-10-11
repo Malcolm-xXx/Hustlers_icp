@@ -1,0 +1,16 @@
+[package]
+name = "user_auth"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+candid = "0.10"                     # For defining interface types
+ic-cdk = "0.8.0-beta.0"             # Core library for the Internet Computer
+ic-cdk-macros = "0.8.0-beta.0"      # Macros for easier canister development
+sha2 = "0.10.5"                      # SHA-256 hashing library
+serde = { version = "1.0", features = ["derive"] }  # Serialization and deserialization
