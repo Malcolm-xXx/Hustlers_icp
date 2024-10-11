@@ -13,6 +13,6 @@
   },
   "type": "module",
   "workspaces": [
-    "src/hustler_icp_frontend"
+    "src/flutter_web_build_frontend"
   ]
 }

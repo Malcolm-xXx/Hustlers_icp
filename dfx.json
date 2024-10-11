@@ -9,6 +9,17 @@
       "candid": "src/user_request/user_request.did",
       "package": "user_request",
       "type": "rust"
+    },
+    "hustler_front_frontend": {
+      "dependencies": [
+        "user_auth",
+        "user_request"
+      ],
+      "source": [
+        "src/flutter_web_build_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "flutter_web_build_frontend"
     }
   },
   "defaults": {
