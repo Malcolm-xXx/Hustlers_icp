@@ -22,9 +22,4 @@ Built using Flutter for a responsive, cross-platform experience, and powered by 
 - Agent_dart/AstroxNetwork
 - dfx (Internet Computer SDK)
 
-## Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Malcolm-xXx/Hustler_icp_.git
 
